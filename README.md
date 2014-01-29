@@ -1,4 +1,4 @@
-text-download-from-Internet-and-formatting
+text downloader and formatting
 ==========================================
 
 A tiny shell script I use to download and convert text data from HTML pages and convert it to txt format for my convenience.
@@ -12,4 +12,5 @@ curl -O http://www.faqs.org/rfcs/rfc2001.html
 In the example (listed above) the script will download the text content (a RFC doc) from the http://www.faqs.org/rfcs/rfc2001 webpage and convert it into a .txt format. 
 
 You can edit the necessary web address here.
+
 
