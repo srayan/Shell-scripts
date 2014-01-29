@@ -1,0 +1,6 @@
+#! #! /bin/sh
+
+curl -O http://www.faqs.org/rfcs/rfc2001.html
+sleep 5
+textutil -convert txt "rfc2001.html"
+
