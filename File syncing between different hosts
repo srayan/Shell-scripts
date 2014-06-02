@@ -1,5 +1,6 @@
 # This is a shell command that helps me transfer files in-between two different hosts. 
 # In my case one host is my laptop - a MacBook running OS X 10.6.8 and the other host being a plug computer running Arch Linux.
+# The hosts might be on different networks in different geographies.
 
 rsync --progress -r /Directory_location_and_name root@IPaddress of router:/mnt/usbstick/MacB
 
