@@ -25,3 +25,24 @@ rsync would maintain an internal log wherein it would check the existing files a
 Additionally by using the --progress parameter we can view the progress and be able to perform an ETA.
 
 I have performed speed comparisons in-between rsync and ftp and found them to work on similar speeds.
+
+
+
+Video transcoding using ffmpeg
+==========================================
+This script helps me alter the video and audio encoding of a media file. It can be be a video format such as .mov, .mp4, .avi, .mkv or it can also be a music encoding such as .mp3.
+
+I can also use ffmpeg to extract the audio stream from a video file.
+
+
+
+
+Youtube downloader over command line
+==========================================
+This script helps me download youtube videos over the command line. It is useful because I can choose the format I want upfront (ex: 3gpp, mp4, 1080p, 720p).
+Typically Youtube servers offer far better upstreaming speeds (on an average) compared to torrents.
+
+Once compltely downloaded, you can also use a part of the script to extract the audio stream from the downloaded video file. This comes in handy if you are trying to play that song which is only available on Youtube and not on Spotify or iTunes etc :)
+
+
+
