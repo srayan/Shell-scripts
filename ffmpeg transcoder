@@ -1,0 +1,12 @@
+#This script allows me to convert (transcode) video formats. I am converting from .mov to .avi
+ffmpeg -i nasa.mov -acodec copy -vcodec copy -f avi nasa.avi
+
+
+
+#To extract the audio file from an mp4 video file
+ffmpeg -i filename.mp4 -ab 160k -ac 2 -ar 44100 -vn filename.mp3
+
+
+#Example of extracting the audio from the music video "Different Worlds" into an mp3 format with explicit sampling and bit rate
+ffmpeg -i different_worlds.mp4 -ab 160k -ac 2 -ar 44100 -vn different_worlds.mp3
+
