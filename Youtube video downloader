@@ -1,0 +1,30 @@
+#On Arch Linux | should work similarly on other Linux distros too.
+
+#Installing youtube-dl binary
+pacman -S youtube-dl
+
+#Installing ffmpeg for necessary transcoding (optional)
+pacman -S ffmpeg
+
+
+#We need to list the available format (for that Youtube video) numbers
+youtube-dl -F "youtube URL"
+
+
+#To download the video file in mp4 format
+wget -O "filename.mp4" $( youtube-dl -g -f "format-number" "youtube URL" )
+
+
+# ex: with format number = 18 as mp4. This will be obtained upon executing youtube-dl -F "youtube URL".
+wget -O "tanhadil.mp4" $( youtube-dl -g -f "18" "https://www.youtube.com/watch?v=uQ88ZRODkiE&feature=kp" )
+
+
+# example of two bengali movie downloads
+
+wget -O "Phoring.mp4" $( youtube-dl -g -f "18" "https://www.youtube.com/watch?v=NfhqsQ9rLLk" )
+
+wget -O "Baishey Srabon.mp4" $( youtube-dl -g -f "18" "https://www.youtube.com/watch?v=0i8FDGtOrqU" )
+
+
+#To extract the audio file from an mp4 video file
+ffmpeg -i filename.mp4 -ab 160k -ac 2 -ar 44100 -vn filename.mp3
