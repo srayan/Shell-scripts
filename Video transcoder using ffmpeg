@@ -7,6 +7,12 @@ ffmpeg -i nasa.mov -acodec copy -vcodec copy -f avi nasa.avi
 ffmpeg -i filename.mp4 -ab 160k -ac 2 -ar 44100 -vn filename.mp3
 
 
+
 #Example of extracting the audio from the music video "Different Worlds" into an mp3 format with explicit sampling and bit rate
 ffmpeg -i different_worlds.mp4 -ab 160k -ac 2 -ar 44100 -vn different_worlds.mp3
 
+
+
+#Some other features that can be done using ffmpeg are :
+#capturing screen activity / screencasting
+#stitching audio to a video stream (comes in handy if you are dubbing a video)
