@@ -1,6 +1,6 @@
 #Script for downloading a video from Youtube, converting it into mp3 audio through ffmpeg processing
-#Requires ffmpeg for post video processing
-#Requires mutt and postfix configured on your server for email reminders (ex: mavewrick@gmail is my email address)
+#Requires : ffmpeg for post video processing, youtube-dl
+#Requires : mutt and postfix configured on your server for email reminders (ex: mavewrick@gmail is my email address)
 
 #Save this shell script as downloader.sh
 #To execute: terminal$> sh downloader.sh youtubeURL
