@@ -1,0 +1,13 @@
+#Script for downloading a video from Youtube, converting it into mp3 audio through ffmpeg processing
+#Requires ffmpeg for post video processing
+#Requires mutt and postfix configured on your server for email reminders (ex: mavewrick@gmail is my email address)
+
+#Save this shell script as downloader.sh
+#To execute: terminal$> sh downloader.sh youtubeURL
+
+#! /bin/sh
+
+url1=$1
+youtube-dl -o "%(title)s. %(ext)s" --extract-audio --audio-format "mp3" --audio-quality "160k" $url1
+
+echo "All OK for " $url1 | mutt -s "Transcode complete Pirate!" -- mavewrick@gmail.com
