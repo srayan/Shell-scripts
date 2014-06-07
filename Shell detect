@@ -1,0 +1,12 @@
+#Detect all the available shells in your *nix system.
+
+echo "Checking shells for existence"
+for check in sh ksh bash csh tcsh zsh ash
+do
+cmd="$check -c exit"
+if($cmd>/dev/null 2> /dev/null) then
+echo "$check found"
+else
+echo "$check Not found"
+fi
+done
