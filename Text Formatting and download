@@ -1,3 +1,5 @@
+#The idea is to downlaod any text off the Internet and format it into your preferred medium using textutils.
+
 #! /bin/sh
 
 curl -O http://www.faqs.org/rfcs/rfc2001.html
