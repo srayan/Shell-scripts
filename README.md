@@ -1,3 +1,23 @@
+Youtube music on Web Server + Email reminder
+=============================================
+
+This shell script has several pre-requisites:
+1. SMTP configured on the system
+2. Web Server built, up and running
+3. ffmpeg and youtube-dl binaries installed
+
+The idea is to extract the audio stream from a music video off Youtube. It should also work for a few other video streaming websites.
+The extracted audio will be mp3 encoded and will have 160k bit rate ~ so good quality!
+
+As arguments, the following have to be passed onto the script:
+youtubeURL recipient email address
+
+ex:
+$> sh scripter.sh https://www.youtube.com/watch?v=tPEE9ZwTmy0 recipient@emailaddress.com
+
+The song will be created in a directory named after the email address on the portal. The recipient can directly access it from there. In this version I have not included any login / password combinations. I would possibly do that in the future.
+
+
 Text downloader and formatting
 ==========================================
 
@@ -33,7 +53,6 @@ Video transcoding using ffmpeg
 This script helps me alter the video and audio encoding of a media file. It can be be a video format such as .mov, .mp4, .avi, .mkv or it can also be a music encoding such as .mp3.
 
 I can also use ffmpeg to extract the audio stream from a video file.
-
 
 
 
