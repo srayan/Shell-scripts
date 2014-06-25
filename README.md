@@ -18,6 +18,14 @@ $> sh scripter.sh https://www.youtube.com/watch?v=tPEE9ZwTmy0 recipient@emailadd
 The song will be created in a directory named after the email address on the portal. The recipient can directly access it from there. In this version I have not included any login / password combinations. I would possibly do that in the future.
 
 
+
+Server backing up
+==================
+This script takes a complete backup of my Apache web server directories and writes them ontoa different backup disk (mounted over USB).
+Can be invoked through a cronjob or manually.
+Once the backup is complete, the server sends an email notification.
+
+
 Text downloader and formatting
 ==========================================
 
