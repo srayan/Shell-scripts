@@ -1,0 +1,12 @@
+#This script takes a complete backup of my Apache web server directories and writes them onto 
+#a different backup disk (mounted over USB).
+#Can be invoked through a cronjob or manually.
+#Once the backup is complete, the server sends an email notification.
+
+
+#/srv is the default Apache directory and the /mnt/usbstick/backup is an additional (mounted) storage drive to maintain backups.
+
+
+rsync --progress -r /srv/ /mnt/usbstick/backup/
+
+echo "Server successfully backed up" | mutt -s "Cronjob successful!" -- mavewrick@gmail.com
