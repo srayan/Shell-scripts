@@ -22,9 +22,7 @@ The song will be created in a directory named after the email address on the por
 Server backing up
 ==================
 This script takes a complete backup of my Apache web server directories and writes them ontoa different backup disk (mounted over USB).
-
 Can be invoked through a cronjob or manually.
-
 Once the backup is complete, the server sends an email notification.
 
 
