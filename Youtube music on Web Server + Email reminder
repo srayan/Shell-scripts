@@ -10,7 +10,7 @@ email1=$2
 
 
 #Making directory for email sender on Server and moving to the directory for file creation
-mkdir $email1
+mkdir -k $email1
 cd $email1
 
 
