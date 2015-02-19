@@ -1,0 +1,23 @@
+#For configuring email on your server using Postfix and Mutt, follow directions here
+
+#Configuring Postfix for Gmail:
+
+#Update /etc/postfix/main.cf:
+relayhost = [smtp.gmail.com]:587
+smtp_tls_security_level = encrypt
+smtp_tls_CApath = /etc/ssl/certs
+smtp_sasl_auth_enable = yes
+smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
+smtp_sasl_security_options = noanonymous
+
+#Create /etc/postfix/sasl_passwd:
+[smtp.gmail.com]:587     email@gmail.com:emailPassword
+
+#Run as root:
+postmap /etc/postfix/sasl_passwd
+chmod 640 /etc/postfix/sasl_passwd*
+chgrp postfix /etc/postfix/sasl_passwd*
+
+#Tell Postfix to reload configuration:
+postfix reload
+systemctl restart postfix
