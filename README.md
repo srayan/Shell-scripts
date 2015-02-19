@@ -74,3 +74,6 @@ Once compltely downloaded, you can also use a part of the script to extract the 
 
 
 
+Emailavalance : Email bot to teach spammers a lesson
+==========================================
+This script helps me create a bot for consistently sending emails to specified email addressed. Born out of necessity, I decided the best way to teach spammers a lesson was to spam them! Comes in handy when the unsubscribe button does not work and despite personally asking the person to take you off the email list they decide not to! Emailavalance 
