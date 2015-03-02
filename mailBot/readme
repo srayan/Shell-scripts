@@ -11,7 +11,7 @@ smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
 smtp_sasl_security_options = noanonymous
 
 #Create /etc/postfix/sasl_passwd:
-[smtp.gmail.com]:587     email@gmail.com:emailPassword
+[smtp.gmail.com]:587     YourEmailAddress@gmail.com:YourEmailPassword
 
 #Run as root:
 postmap /etc/postfix/sasl_passwd
